@@ -87,7 +87,6 @@
     .step-title { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
     .step-desc { font-size: 13px; color: var(--gray-sub); line-height: 1.6; }
     .asap-section { background: linear-gradient(135deg, var(--ink) 0%, #2A2A2E 100%); border-radius: 20px; padding: 56px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; overflow: hidden; position: relative; }
-    .asap-section::before { content: ''; position: absolute; top: -60px; right: -60px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(212,130,10,0.15) 0%, transparent 70%); }
     .asap-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--amber); margin-bottom: 14px; }
     .asap-title { font-size: clamp(26px, 3vw, 36px); font-weight: 700; letter-spacing: -0.5px; color: white; line-height: 1.2; margin-bottom: 16px; }
     .asap-desc { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 28px; }
@@ -172,26 +171,18 @@
 <body>
   <nav>
     <div class="nav-logo">Line<span>Up</span></div>
-    <div class="nav-links">
-      <a href="#for-barbers">For Barbers</a>
-      <a href="#how-it-works">How it works</a>
-      <a href="#pricing">Pricing</a>
-    </div>
-    <div class="nav-cta">
-      <button class="btn btn-ghost">Log in</button>
-      <button class="btn btn-amber">Get started free</button>
-    </div>
+    <div class="nav-links"><a href="#for-barbers">For Barbers</a><a href="#how-it-works">How it works</a><a href="#pricing">Pricing</a></div>
+    <div class="nav-cta"><button class="btn btn-ghost">Log in</button><button class="btn btn-amber">Get started free</button></div>
   </nav>
-
-  <div style="max-width:1160px;margin:0 auto;padding:0 5%;">
-    <section class="hero" style="padding-left:0;padding-right:0;">
+  <div style="max-width:1160px;margin:0 auto;padding:0 5%">
+    <section class="hero" style="padding-left:0;padding-right:0">
       <div>
-        <div class="hero-eyebrow"><i class="ti ti-bolt" style="font-size:13px;"></i> Now in early access</div>
-        <h1>Your barber,<br /><em>on your schedule.</em></h1>
+        <div class="hero-eyebrow"><i class="ti ti-bolt" style="font-size:13px"></i> Now in early access</div>
+        <h1>Your barber,<br><em>on your schedule.</em></h1>
         <p class="hero-sub">LineUp connects you with solo barbers in your city. Book in seconds, join the ASAP waitlist when you want in sooner, and never miss a last-minute slot again.</p>
         <div class="hero-actions">
-          <button class="btn btn-amber btn-lg"><i class="ti ti-calendar" style="font-size:16px;"></i> Book a barber</button>
-          <button class="btn btn-ghost btn-lg">I'm a barber →</button>
+          <button class="btn btn-amber btn-lg"><i class="ti ti-calendar" style="font-size:16px"></i> Book a barber</button>
+          <button class="btn btn-ghost btn-lg">I'm a barber &rarr;</button>
         </div>
         <div class="hero-trust">
           <div class="hero-trust-avatars"><div>JK</div><div>AM</div><div>TR</div><div>DS</div><div>+</div></div>
@@ -199,168 +190,53 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div style="position:relative;max-width:340px;margin:0 auto;">
+        <div style="position:relative;max-width:340px;margin:0 auto">
           <div class="phone-mockup">
-            <div class="phone-status"><span>9:41</span><span style="display:flex;gap:6px;align-items:center;"><i class="ti ti-wifi" style="font-size:13px;"></i><i class="ti ti-battery-2" style="font-size:14px;"></i></span></div>
+            <div class="phone-status"><span>9:41</span><span style="display:flex;gap:6px;align-items:center"><i class="ti ti-wifi" style="font-size:13px"></i><i class="ti ti-battery-2" style="font-size:14px"></i></span></div>
             <div class="phone-content">
-              <div style="background:#F3F3F3;border-radius:8px;padding:9px 12px;display:flex;align-items:center;gap:8px;margin-bottom:14px;"><i class="ti ti-search" style="font-size:14px;color:#8A8A8F;"></i><span style="font-size:13px;color:#ABABAB;">Search barbers near you…</span></div>
+              <div style="background:#F3F3F3;border-radius:8px;padding:9px 12px;display:flex;align-items:center;gap:8px;margin-bottom:14px"><i class="ti ti-search" style="font-size:14px;color:#8A8A8F"></i><span style="font-size:13px;color:#ABABAB">Search barbers near you&hellip;</span></div>
               <div class="phone-barber-card">
                 <div class="phone-barber-photo"><div class="phone-barber-tag">#A2BC31</div></div>
                 <div class="phone-barber-info">
                   <div class="phone-barber-name">Darius Moore</div>
-                  <div class="phone-barber-meta">Houston, TX · ★ 4.9 · 128 reviews</div>
+                  <div class="phone-barber-meta">Houston, TX &middot; &#9733; 4.9 &middot; 128 reviews</div>
                   <div class="phone-slots"><div class="phone-slot">9:00</div><div class="phone-slot active">10:30</div><div class="phone-slot">11:00</div><div class="phone-slot">12:00</div><div class="phone-slot full">Full</div><div class="phone-slot">2:00</div></div>
                 </div>
               </div>
-              <div class="phone-asap-banner"><i class="ti ti-bolt" style="font-size:15px;color:#D4820A;"></i><span style="font-size:12px;color:#D4820A;font-weight:500;">ASAP queue available · 4 waiting</span></div>
+              <div class="phone-asap-banner"><i class="ti ti-bolt" style="font-size:15px;color:#D4820A"></i><span style="font-size:12px;color:#D4820A;font-weight:500">ASAP queue available &middot; 4 waiting</span></div>
             </div>
           </div>
-          <div class="hero-badge badge-left"><div style="width:28px;height:28px;border-radius:50%;background:#E8F7F0;display:flex;align-items:center;justify-content:center;"><i class="ti ti-check" style="font-size:15px;color:#2D9E6B;"></i></div><div><div style="font-size:12px;font-weight:600;color:#1C1C1E;">Booked!</div><div style="font-size:11px;color:#8A8A8F;">10:30 AM · Darius</div></div></div>
-          <div class="hero-badge badge-right"><i class="ti ti-message" style="font-size:16px;color:#D4820A;"></i><div><div style="font-size:12px;font-weight:600;color:#1C1C1E;">Slot opened!</div><div style="font-size:11px;color:#8A8A8F;">Reply YES to claim</div></div></div>
+          <div class="hero-badge badge-left"><div style="width:28px;height:28px;border-radius:50%;background:#E8F7F0;display:flex;align-items:center;justify-content:center"><i class="ti ti-check" style="font-size:15px;color:#2D9E6B"></i></div><div><div style="font-size:12px;font-weight:600;color:#1C1C1E">Booked!</div><div style="font-size:11px;color:#8A8A8F">10:30 AM &middot; Darius</div></div></div>
+          <div class="hero-badge badge-right"><i class="ti ti-message" style="font-size:16px;color:#D4820A"></i><div><div style="font-size:12px;font-weight:600;color:#1C1C1E">Slot opened!</div><div style="font-size:11px;color:#8A8A8F">Reply YES to claim</div></div></div>
         </div>
       </div>
     </section>
   </div>
-
-  <div style="max-width:1160px;margin:0 auto;padding:0 5% 80px;">
+  <div style="max-width:1160px;margin:0 auto;padding:0 5% 80px">
     <div class="stats-bar">
       <div class="stat-item"><div class="stat-value">500<span>+</span></div><div class="stat-label">Barbers on platform</div></div>
       <div class="stat-item"><div class="stat-value">12<span>k</span></div><div class="stat-label">Appointments booked</div></div>
-      <div class="stat-item"><div class="stat-value">4.9<span>★</span></div><div class="stat-label">Average barber rating</div></div>
+      <div class="stat-item"><div class="stat-value">4.9<span>&#9733;</span></div><div class="stat-label">Average barber rating</div></div>
       <div class="stat-item"><div class="stat-value">94<span>%</span></div><div class="stat-label">Show-up rate</div></div>
     </div>
   </div>
-
-  <div id="for-barbers" style="max-width:1160px;margin:0 auto;padding:0 5% 80px;">
-    <div class="section-header">
-      <div class="section-label">Built for both sides</div>
-      <h2 class="section-title">Everything you need, nothing you don't</h2>
-      <p class="section-sub">LineUp is designed for solo barbers who want a smarter business, and customers who want a better booking experience.</p>
-    </div>
+  <div id="for-barbers" style="max-width:1160px;margin:0 auto;padding:0 5% 80px">
+    <div class="section-header"><div class="section-label">Built for both sides</div><h2 class="section-title">Everything you need, nothing you don't</h2><p class="section-sub">LineUp is designed for solo barbers who want a smarter business, and customers who want a better booking experience.</p></div>
     <div class="value-split">
-      <div class="value-card">
-        <div class="value-card-label barber"><i class="ti ti-scissors" style="font-size:13px;"></i> For Barbers</div>
-        <h3>Run your shop like a pro — without the chaos</h3>
-        <p>Your own storefront, smart scheduling, and a queue that fills your gaps automatically.</p>
-        <ul class="feature-list barber">
-          <li><div class="icon-wrap"><i class="ti ti-layout-dashboard"></i></div><span>Dashboard with live schedule, earnings, and queue status</span></li>
-          <li><div class="icon-wrap"><i class="ti ti-photo"></i></div><span>Photo gallery to showcase your work and attract new clients</span></li>
-          <li><div class="icon-wrap"><i class="ti ti-qrcode"></i></div><span>Unique QR tag clients scan to find you instantly</span></li>
-          <li><div class="icon-wrap"><i class="ti ti-bolt"></i></div><span>ASAP queue fills cancelled slots automatically — zero lost revenue</span></li>
-          <li><div class="icon-wrap"><i class="ti ti-credit-card"></i></div><span>Automatic no-show fee protection via Stripe</span></li>
-        </ul>
-        <div style="margin-top:24px;"><button class="btn btn-amber">Start free trial →</button></div>
-      </div>
-      <div class="value-card">
-        <div class="value-card-label customer"><i class="ti ti-user" style="font-size:13px;"></i> For Customers</div>
-        <h3>Find a great barber and book in under a minute</h3>
-        <p>Browse top-rated barbers near you, pick a time that works, or hop on the waitlist for the next open slot.</p>
-        <ul class="feature-list customer">
-          <li><div class="icon-wrap"><i class="ti ti-map-pin"></i></div><span>Explore barbers near you with photos, ratings, and real availability</span></li>
-          <li><div class="icon-wrap"><i class="ti ti-calendar"></i></div><span>Book appointments in seconds — no phone calls, no DMs</span></li>
-          <li><div class="icon-wrap"><i class="ti ti-bolt"></i></div><span>ASAP queue — get texted the moment a slot opens near you</span></li>
-          <li><div class="icon-wrap"><i class="ti ti-qrcode"></i></div><span>Scan a barber's QR tag to pull up their profile instantly</span></li>
-          <li><div class="icon-wrap"><i class="ti ti-message"></i></div><span>SMS confirmations and reminders — no app required to confirm</span></li>
-        </ul>
-        <div style="margin-top:24px;"><button class="btn btn-amber-outline">Find a barber →</button></div>
-      </div>
+      <div class="value-card"><div class="value-card-label barber"><i class="ti ti-scissors" style="font-size:13px"></i> For Barbers</div><h3>Run your shop like a pro &mdash; without the chaos</h3><p>Your own storefront, smart scheduling, and a queue that fills your gaps automatically.</p><ul class="feature-list barber"><li><div class="icon-wrap"><i class="ti ti-layout-dashboard"></i></div><span>Dashboard with live schedule, earnings, and queue status</span></li><li><div class="icon-wrap"><i class="ti ti-photo"></i></div><span>Photo gallery to showcase your work</span></li><li><div class="icon-wrap"><i class="ti ti-qrcode"></i></div><span>Unique QR tag clients scan to find you instantly</span></li><li><div class="icon-wrap"><i class="ti ti-bolt"></i></div><span>ASAP queue fills cancelled slots automatically</span></li><li><div class="icon-wrap"><i class="ti ti-credit-card"></i></div><span>Automatic no-show fee protection via Stripe</span></li></ul><div style="margin-top:24px"><button class="btn btn-amber">Start free trial &rarr;</button></div></div>
+      <div class="value-card"><div class="value-card-label customer"><i class="ti ti-user" style="font-size:13px"></i> For Customers</div><h3>Find a great barber and book in under a minute</h3><p>Browse top-rated barbers near you, pick a time that works, or hop on the waitlist for the next open slot.</p><ul class="feature-list customer"><li><div class="icon-wrap"><i class="ti ti-map-pin"></i></div><span>Explore barbers near you with photos, ratings, and real availability</span></li><li><div class="icon-wrap"><i class="ti ti-calendar"></i></div><span>Book appointments in seconds &mdash; no phone calls</span></li><li><div class="icon-wrap"><i class="ti ti-bolt"></i></div><span>ASAP queue &mdash; get texted the moment a slot opens</span></li><li><div class="icon-wrap"><i class="ti ti-qrcode"></i></div><span>Scan a QR tag to pull up their profile instantly</span></li><li><div class="icon-wrap"><i class="ti ti-message"></i></div><span>SMS confirmations &mdash; no app required to confirm</span></li></ul><div style="margin-top:24px"><button class="btn btn-amber-outline">Find a barber &rarr;</button></div></div>
     </div>
   </div>
-
-  <div class="how-bg" id="how-it-works">
-    <div class="section" style="padding-top:72px;padding-bottom:72px;">
-      <div class="section-header" style="text-align:center;">
-        <div class="section-label" style="text-align:center;">Simple by design</div>
-        <h2 class="section-title" style="margin:0 auto 14px;">How LineUp works</h2>
-        <p class="section-sub" style="margin:0 auto;text-align:center;">From search to seated in four steps.</p>
-      </div>
-      <div class="steps-grid">
-        <div class="step-card"><div class="step-num">1</div><div class="step-title">Find your barber</div><div class="step-desc">Browse the explore page, search by name, or scan a QR tag to pull up any barber's profile instantly.</div></div>
-        <div class="step-card"><div class="step-num">2</div><div class="step-title">Pick a service & time</div><div class="step-desc">Choose what you need, see live availability, and book a slot — or join the ASAP queue for fully-booked barbers.</div></div>
-        <div class="step-card"><div class="step-num">3</div><div class="step-title">Get confirmed</div><div class="step-desc">You'll receive an SMS confirmation immediately. Cancel anytime — no penalty if you give 1 hour notice.</div></div>
-        <div class="step-card"><div class="step-num">4</div><div class="step-title">Show up & get fresh</div><div class="step-desc">Walk in at your time, pay at the shop. Rate your barber after and help the community find great cuts.</div></div>
-      </div>
-    </div>
-  </div>
-
-  <div style="max-width:1160px;margin:0 auto;padding:80px 5%;">
+  <div class="how-bg" id="how-it-works"><div class="section" style="padding-top:72px;padding-bottom:72px"><div class="section-header" style="text-align:center"><div class="section-label" style="text-align:center">Simple by design</div><h2 class="section-title" style="margin:0 auto 14px">How LineUp works</h2><p class="section-sub" style="margin:0 auto;text-align:center">From search to seated in four steps.</p></div><div class="steps-grid"><div class="step-card"><div class="step-num">1</div><div class="step-title">Find your barber</div><div class="step-desc">Browse, search by name, or scan a QR tag to pull up any barber's profile instantly.</div></div><div class="step-card"><div class="step-num">2</div><div class="step-title">Pick a service &amp; time</div><div class="step-desc">Choose what you need, see live availability, and book &mdash; or join the ASAP queue.</div></div><div class="step-card"><div class="step-num">3</div><div class="step-title">Get confirmed</div><div class="step-desc">You'll receive an SMS confirmation immediately. Cancel anytime with 1 hour notice.</div></div><div class="step-card"><div class="step-num">4</div><div class="step-title">Show up &amp; get fresh</div><div class="step-desc">Walk in at your time, pay at the shop. Rate your barber after.</div></div></div></div></div>
+  <div style="max-width:1160px;margin:0 auto;padding:80px 5%">
     <div class="asap-section">
-      <div>
-        <div class="asap-eyebrow"><i class="ti ti-bolt" style="font-size:12px;"></i> The ASAP Queue</div>
-        <h2 class="asap-title">Never miss a last-minute slot again</h2>
-        <p class="asap-desc">When your barber is fully booked, join the ASAP queue. The moment a slot opens, everyone on the list gets a text. First to reply YES gets it.</p>
-        <div class="asap-steps">
-          <div class="asap-step"><div class="asap-step-icon"><i class="ti ti-user-plus"></i></div><div class="asap-step-text"><strong>Join the queue</strong> — opt in with your phone number.</div></div>
-          <div class="asap-step"><div class="asap-step-icon"><i class="ti ti-message"></i></div><div class="asap-step-text"><strong>Get an SMS</strong> the moment a slot opens.</div></div>
-          <div class="asap-step"><div class="asap-step-icon"><i class="ti ti-check"></i></div><div class="asap-step-text"><strong>Reply YES</strong> within 5 minutes. First to confirm gets the slot.</div></div>
-        </div>
-      </div>
-      <div class="asap-visual">
-        <div class="asap-card">
-          <div class="asap-card-title">ASAP queue · Darius Moore</div>
-          <div class="asap-queue-item"><div class="asap-queue-num">1</div><div class="asap-queue-name">Alex R.</div><div class="asap-queue-time">Waiting 22 min</div></div>
-          <div class="asap-queue-item"><div class="asap-queue-num">2</div><div class="asap-queue-name">Ben C.</div><div class="asap-queue-time">Waiting 35 min</div></div>
-          <div class="asap-queue-item"><div class="asap-queue-num">3</div><div class="asap-queue-name">Malik S.</div><div class="asap-queue-time">Waiting 41 min</div></div>
-        </div>
-        <div class="asap-sms-card">
-          <div class="asap-sms-header"><i class="ti ti-message" style="font-size:12px;"></i> SMS from LineUp</div>
-          <div class="sms-bubble">Hey Alex! A slot just opened with Darius Moore — 11:30 AM today. Reply <strong>YES</strong> within 5 min to claim it.</div>
-          <div style="overflow:hidden;"><div class="sms-reply">YES</div></div>
-          <div style="clear:both;margin-top:10px;font-size:12px;color:rgba(255,255,255,0.4);">&#10003; Slot confirmed · 11:30 AM · Darius Moore</div>
-        </div>
-      </div>
+      <div><div class="asap-eyebrow"><i class="ti ti-bolt" style="font-size:12px"></i> The ASAP Queue</div><h2 class="asap-title">Never miss a last-minute slot again</h2><p class="asap-desc">When your barber is fully booked, join the ASAP queue. The moment a slot opens, everyone gets a text. First to reply YES gets it.</p><div class="asap-steps"><div class="asap-step"><div class="asap-step-icon"><i class="ti ti-user-plus"></i></div><div class="asap-step-text"><strong>Join the queue</strong> &mdash; opt in with your phone number.</div></div><div class="asap-step"><div class="asap-step-icon"><i class="ti ti-message"></i></div><div class="asap-step-text"><strong>Get an SMS</strong> the moment a slot opens.</div></div><div class="asap-step"><div class="asap-step-icon"><i class="ti ti-check"></i></div><div class="asap-step-text"><strong>Reply YES</strong> within 5 minutes to claim the slot.</div></div></div></div>
+      <div class="asap-visual"><div class="asap-card"><div class="asap-card-title">ASAP queue &middot; Darius Moore</div><div class="asap-queue-item"><div class="asap-queue-num">1</div><div class="asap-queue-name">Alex R.</div><div class="asap-queue-time">Waiting 22 min</div></div><div class="asap-queue-item"><div class="asap-queue-num">2</div><div class="asap-queue-name">Ben C.</div><div class="asap-queue-time">Waiting 35 min</div></div><div class="asap-queue-item"><div class="asap-queue-num">3</div><div class="asap-queue-name">Malik S.</div><div class="asap-queue-time">Waiting 41 min</div></div></div><div class="asap-sms-card"><div class="asap-sms-header"><i class="ti ti-message" style="font-size:12px"></i> SMS from LineUp</div><div class="sms-bubble">Hey Alex! A slot just opened with Darius Moore &mdash; 11:30 AM today. Reply <strong>YES</strong> within 5 min to claim it.</div><div style="overflow:hidden"><div class="sms-reply">YES</div></div><div style="clear:both;margin-top:10px;font-size:12px;color:rgba(255,255,255,0.4)">&check; Slot confirmed &middot; 11:30 AM &middot; Darius Moore</div></div></div>
     </div>
   </div>
-
-  <div style="max-width:1160px;margin:0 auto;padding:0 5% 80px;">
-    <div class="section-header"><div class="section-label">Real feedback</div><h2 class="section-title">Loved by barbers and clients</h2></div>
-    <div class="reviews-grid">
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">“The ASAP queue is a game changer. I used to lose money every time someone cancelled last-minute. Now that slot fills itself within minutes.”</p><div class="review-author"><div class="review-avatar" style="background:linear-gradient(135deg,#D4820A,#F5C542);">DM</div><div><div class="review-name">Darius M.</div><div class="review-role">Solo barber · Houston, TX</div></div></div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">“I got a text at 11am saying a slot opened at 11:30. I was literally two streets away. Showed up, got a fresh cut. LineUp is nuts.”</p><div class="review-author"><div class="review-avatar" style="background:linear-gradient(135deg,#2D9E6B,#4AC88A);">AR</div><div><div class="review-name">Alex R.</div><div class="review-role">Customer · Houston, TX</div></div></div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">“My clients love that they can book straight from my QR tag. I put it on my mirror and half my new clients come from scanning it.”</p><div class="review-author"><div class="review-avatar" style="background:linear-gradient(135deg,#5A5A9A,#8080C0);">JW</div><div><div class="review-name">Jordan W.</div><div class="review-role">Solo barber · Atlanta, GA</div></div></div></div>
-    </div>
-  </div>
-
-  <div class="how-bg" id="pricing">
-    <div class="section" style="padding-top:72px;padding-bottom:72px;">
-      <div class="section-header" style="text-align:center;"><div class="section-label" style="text-align:center;">Simple pricing</div><h2 class="section-title" style="margin:0 auto 14px;">One plan. No surprises.</h2><p class="section-sub" style="margin:0 auto;text-align:center;">Everything a solo barber needs. Cancel anytime.</p></div>
-      <div class="pricing-card">
-        <div class="pricing-badge">For Barbers</div>
-        <div class="pricing-price"><sup>$</sup>25<sub>/mo</sub></div>
-        <div class="pricing-trial">30-day free trial · No credit card required</div>
-        <ul class="pricing-features">
-          <li><i class="ti ti-check"></i> Public barber profile + photo gallery</li>
-          <li><i class="ti ti-check"></i> Smart scheduling &amp; calendar management</li>
-          <li><i class="ti ti-check"></i> ASAP queue — auto-fills cancelled slots</li>
-          <li><i class="ti ti-check"></i> Unique QR tag for instant client lookup</li>
-          <li><i class="ti ti-check"></i> Stripe no-show fee protection</li>
-          <li><i class="ti ti-check"></i> SMS notifications via Twilio</li>
-          <li><i class="ti ti-check"></i> Analytics dashboard (coming soon)</li>
-        </ul>
-        <button class="btn btn-amber" style="width:100%;justify-content:center;padding:13px;font-size:15px;">Start free trial →</button>
-        <div style="margin-top:12px;font-size:12px;color:var(--gray-text);text-align:center;">Customer app is always free</div>
-      </div>
-    </div>
-  </div>
-
-  <div style="max-width:1160px;margin:0 auto;padding:80px 5%;">
-    <div class="cta-banner">
-      <h2>Ready to <em>level up</em> your shop?</h2>
-      <p>Join hundreds of barbers already using LineUp to fill their books, reduce no-shows, and grow their clientele.</p>
-      <div class="cta-actions">
-        <button class="app-store-btn"><i class="ti ti-brand-apple" style="font-size:22px;"></i><div class="store-info"><span class="store-label">Download on the</span><span class="store-name">App Store</span></div></button>
-        <button class="app-store-btn"><i class="ti ti-brand-google-play" style="font-size:22px;"></i><div class="store-info"><span class="store-label">Get it on</span><span class="store-name">Google Play</span></div></button>
-        <button class="btn btn-amber-outline btn-lg">Start on web →</button>
-      </div>
-    </div>
-  </div>
-
-  <div style="max-width:1160px;margin:0 auto;padding:0 5%;">
-    <footer>
-      <div class="footer-logo">Line<span>Up</span></div>
-      <div class="footer-links"><a href="#">For Barbers</a><a href="#">For Customers</a><a href="#">Pricing</a><a href="#">Privacy</a><a href="#">Terms</a></div>
-      <div class="footer-copy">&copy; 2026 LineUp. All rights reserved.</div>
-    </footer>
-  </div>
+  <div style="max-width:1160px;margin:0 auto;padding:0 5% 80px"><div class="section-header"><div class="section-label">Real feedback</div><h2 class="section-title">Loved by barbers and clients</h2></div><div class="reviews-grid"><div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">&ldquo;The ASAP queue is a game changer. Now that slot fills itself within minutes.&rdquo;</p><div class="review-author"><div class="review-avatar" style="background:linear-gradient(135deg,#D4820A,#F5C542)">DM</div><div><div class="review-name">Darius M.</div><div class="review-role">Solo barber &middot; Houston, TX</div></div></div></div><div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">&ldquo;I got a text at 11am saying a slot opened at 11:30. Showed up, got a fresh cut. LineUp is nuts.&rdquo;</p><div class="review-author"><div class="review-avatar" style="background:linear-gradient(135deg,#2D9E6B,#4AC88A)">AR</div><div><div class="review-name">Alex R.</div><div class="review-role">Customer &middot; Houston, TX</div></div></div></div><div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">&ldquo;Half my new clients come from scanning my QR tag. I put it on my mirror.&rdquo;</p><div class="review-author"><div class="review-avatar" style="background:linear-gradient(135deg,#5A5A9A,#8080C0)">JW</div><div><div class="review-name">Jordan W.</div><div class="review-role">Solo barber &middot; Atlanta, GA</div></div></div></div></div></div>
+  <div class="how-bg" id="pricing"><div class="section" style="padding-top:72px;padding-bottom:72px"><div class="section-header" style="text-align:center"><div class="section-label" style="text-align:center">Simple pricing</div><h2 class="section-title" style="margin:0 auto 14px">One plan. No surprises.</h2><p class="section-sub" style="margin:0 auto;text-align:center">Everything a solo barber needs. Cancel anytime.</p></div><div class="pricing-card"><div class="pricing-badge">For Barbers</div><div class="pricing-price"><sup>$</sup>25<sub>/mo</sub></div><div class="pricing-trial">30-day free trial &middot; No credit card required</div><ul class="pricing-features"><li><i class="ti ti-check"></i> Public barber profile + photo gallery</li><li><i class="ti ti-check"></i> Smart scheduling &amp; calendar management</li><li><i class="ti ti-check"></i> ASAP queue &mdash; auto-fills cancelled slots</li><li><i class="ti ti-check"></i> Unique QR tag for instant client lookup</li><li><i class="ti ti-check"></i> Stripe no-show fee protection</li><li><i class="ti ti-check"></i> SMS notifications via Twilio</li><li><i class="ti ti-check"></i> Analytics dashboard (coming soon)</li></ul><button class="btn btn-amber" style="width:100%;justify-content:center;padding:13px;font-size:15px">Start free trial &rarr;</button><div style="margin-top:12px;font-size:12px;color:var(--gray-text);text-align:center">Customer app is always free</div></div></div></div>
+  <div style="max-width:1160px;margin:0 auto;padding:80px 5%"><div class="cta-banner"><h2>Ready to <em>level up</em> your shop?</h2><p>Join hundreds of barbers already using LineUp to fill their books, reduce no-shows, and grow their clientele.</p><div class="cta-actions"><button class="app-store-btn"><i class="ti ti-brand-apple" style="font-size:22px"></i><div class="store-info"><span class="store-label">Download on the</span><span class="store-name">App Store</span></div></button><button class="app-store-btn"><i class="ti ti-brand-google-play" style="font-size:22px"></i><div class="store-info"><span class="store-label">Get it on</span><span class="store-name">Google Play</span></div></button><button class="btn btn-amber-outline btn-lg">Start on web &rarr;</button></div></div></div>
+  <div style="max-width:1160px;margin:0 auto;padding:0 5%"><footer><div class="footer-logo">Line<span>Up</span></div><div class="footer-links"><a href="#">For Barbers</a><a href="#">For Customers</a><a href="#">Pricing</a><a href="#">Privacy</a><a href="#">Terms</a></div><div class="footer-copy">&copy; 2026 LineUp. All rights reserved.</div></footer></div>
 </body>
 </html>
